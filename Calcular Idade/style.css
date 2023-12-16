@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Montserrat", sans-serif;
+}
+
+:root {
+    --cor0: #61A0AF;
+    --cor1: #96C9DC;
+    --cor2: #FFC145;
+}
+
+body {
+    background-color: var(--cor0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 500px;
+}
+
+main .container-date {
+    height: 80px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+main .container-date input {
+    width: 250px;
+    padding: 6px;
+    outline-color: var(--cor1);
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .container-date button {
+    width: 120px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 3px solid var(--cor2);
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 500ms all ease-in-out;
+}
+
+main .container-date button:hover {
+    background-color: var(--cor2);
+    border: none;
+    color: #fff;
+    transform: scale(1.15);
+}
+
+main .content-date {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .content-date .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+main .content-date .date h2 {
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cor0);
+}
+
+main .content-date .date span {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.hidden {
+    opacity: 0;
+    z-index: -1;
+}
+
+@media(max-width: 600px) {
+    main {
+        width: 450px;
+    }
+
+    main .content-date {
+        justify-content: space-around;
+    }
+}

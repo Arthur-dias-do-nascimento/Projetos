@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist de Musica</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="JS/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="logo-img">
+                <img src="http://clipart-library.com/images_k/music-note-clipart-transparent-background/music-note-clipart-transparent-background-1.png" alt="uma nota musical">
+            </div>
+            <article>
+                <div class="audio">
+                    <div class="details">
+                        <p class="text-details"></p>
+                    </div>
+                    <audio class="player"></audio>
+                </div>
+                <div class="controls">
+                    <button class="prev-btn"><span class="material-symbols-outlined">arrow_back</span></button>
+                    <button class="startPause-btn"><span class="material-symbols-outlined">play_circle</span></button>
+                    <button class="next-btn"><span class="material-symbols-outlined">arrow_forward</span></button>
+                </div>
+            </article>
+            <footer>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="time">
+                    <span class="currentTime">0:00</span>
+                    <span class="duration">0:00</span>
+                </div>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>

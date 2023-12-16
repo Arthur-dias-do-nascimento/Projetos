@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    min-width: 300px;
+    max-width: 500px;
+    height: 380px;
+    padding: 15px;
+}
+
+.logo-img {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.logo-img img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article .audio .details .text-details {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #000;
+    margin: 15px 0px;
+}
+
+article .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+article .controls button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f7f7f7f7;
+    cursor: pointer;
+}
+
+article .controls button span {
+    font-size: 30px;
+    padding: 3px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time span {
+    font-size: 22px;
+    color: #333;
+}
+
+footer {
+    width: 100%;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #dddd;
+    cursor: pointer;
+    margin: 0px 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 8px;
+    background-color: #333;
+    border-radius: 5px;
+}

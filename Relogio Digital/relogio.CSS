@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, blue, blueviolet, red);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h3 {
+    font-size: 2.6rem;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+main .container {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 450px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .container .Horas, .Minutos, .Sengudos {
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 130px;
+    height: 160px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .Horas .hora, .Minutos .minuto, .Sengudos .sengudo {
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+main .container .Horas .time, .Minutos .time, .Sengudos .time {
+    font-size: 1.2rem;
+    font-weight: bold;
+}

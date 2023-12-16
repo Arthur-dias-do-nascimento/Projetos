@@ -1,0 +1,11 @@
+{
+  "name": "quiz_de_matematica",
+  "version": "1.0.0",
+  "description": "quiz de matemtica",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arthur dias",
+  "license": "ISC"
+}

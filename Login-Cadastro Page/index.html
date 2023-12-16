@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Login-Cadastro Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/cadastro.js" defer></script>
+    <script src="assets/js/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <h1>Login-Cadastro</h1>
+            </div>
+            
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contatos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><button class="btn-login">Login</button></li>
+            </ul>
+
+            <div class="mobile-icon hidden">
+                <i class="fa-solid fa-bars fa-fw"></i>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contatos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><button class="btn-login">Login</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="modal"></div>
+
+        <section class="login hidden">
+            <div class="logo">
+                <h2>Login</h2>
+
+                <div class="icon-exit">
+                    <i class="fa-solid fa-x fa-fw" id="icon-close-login"></i>
+                </div>
+            </div>
+
+            <div class="icon-sociais">
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-facebook fa-fw"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-google fa-fw"></i></a>
+                </div>
+            </div>
+
+            <form class="form-login">
+                <div class="email">
+                    <label for="email">
+                        Email:
+
+                        <div class="input-field">
+                            <input type="email" name="email" class="input-email" required placeholder="Digite seu Email">
+
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope fa-fw"></i>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="senha">
+                    <label for="senha">
+                        Senha:
+
+                        <div class="input-field">
+                            <input type="password" name="senha" class="input-senha" required placeholder="Digite sua Senha">
+
+                            <div class="icon">
+                                <i class="fa-solid fa-lock fa-fw" id="icon-senha"></i>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="link">
+                    <p>Não tem uma conta? <a href="#" class="link-cadastro">Faça já!</a></p>
+                </div>
+
+                <button type="submit" class="btn-login-submit">Login</button>
+            </form>
+        </section>
+
+        <section class="cadastro hidden">
+            <div class="logo">
+                <h2>Cadastro</h2>
+
+                <div class="icon-exit">
+                    <i class="fa-solid fa-x fa-fw" id="icon-close-cadastro"></i>
+                </div>
+            </div>
+
+            <div class="icon-sociais">
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-facebook fa-fw"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-github fa-fw"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-google fa-fw"></i></a>
+                </div>
+            </div>
+
+            <form class="form-cadastro">
+                <div class="nome">
+                    <label for="nome">
+                        Nome:
+                        
+                        <div class="input-field">
+                            <input type="text" name="nome" class="input-nome" required placeholder="Digite seu Nome">
+
+                            <div class="icon">
+                                <i class="fa-solid fa-id-badge fa-fw"></i>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="email">
+                    <label for="email">
+                        Email:
+
+                        <div class="input-field">
+                            <input type="email" name="email" class="input-email" required placeholder="Digite seu Email">
+
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope fa-fw"></i>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="senha">
+                    <label for="senha">
+                        Senha:
+
+                        <div class="input-field">
+                            <input type="password" name="senha" class="input-senha" required placeholder="Digite sua Senha">
+
+                            <div class="icon">
+                                <i class="fa-solid fa-lock fa-fw" id="icon-senha"></i>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-cadastro-submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

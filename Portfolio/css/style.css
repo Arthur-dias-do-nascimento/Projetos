@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "Poppins", sans-serif;
+}
+
+:root {
+    --cor0: #002b38;
+    --cor1: #070707;
+    --cor2: #fff;
+    --cor3: #0ef;
+    --cor4: #001e27;
+    --cor5: #00747c;
+    --tamanhoDaTelaParaNavBar: x=800px;
+    --tamanhoReposivo: x=500px;
+}
+
+body {
+    background-color: var(--cor0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--cor4);
+    width: 100%;
+    padding: 10px 15px;
+}
+
+header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav-bar .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60px;
+}
+
+header .nav-bar .nav-logo img {
+    width: 100%;
+}
+
+header .nav-bar .nav-logo h1 {
+    font-size: 1.9rem;
+    font-weight: bolder;
+    font-family: "Fira Code";
+    color: var(--cor1);
+    text-decoration: underline;
+    text-decoration-color: var(--cor0);
+}
+
+header .nav-bar .nav-list ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+header ul .nav-item .nav-link {
+    font-size: 1.3rem;
+    color: var(--cor1);
+    text-decoration: none;
+    position: relative;
+}
+
+.underline:hover::before {
+    position: absolute;
+    content: "";
+    top: 25px;
+    width: 50px;
+    height: 5px;
+    background-color: var(--cor0);
+    border-radius: 5px;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .container-inicio h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--cor2);
+    padding-top: 20px;
+}
+
+main .container .container-inicio p {
+    width: 40%;
+    color: var(--cor2);
+    text-align: justify;
+    padding: 30px 0px;
+}
+
+main .container .container-inicio .icons-sociais, footer .container-footer .footer-icons-sociais {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 3px solid var(--cor3);
+    border-top: 3px solid var(--cor3);
+    width: 120px;
+    padding: 5px 0px;
+}
+
+main .container .container-inicio .icons-sociais .icon a > i, footer .container-footer .footer-icons-sociais .icon a > i {
+    font-size: 1.5rem;
+    color: var(--cor3);
+}
+
+main .container .container-projetos {
+    margin: 40px 0px;
+}
+
+main .container .container-projetos > h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cor2);
+}
+
+main .container .container-projetos > h3 {
+    font-size: 3rem;
+    padding: 10px 0px 30px 0px;
+    color: var(--cor3);
+    text-shadow: 5px 3px 0px black;
+}
+
+main .container .container-projetos .content-projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    gap: 15px;
+}
+
+main .container .container-projetos .content-projetos .item {
+    background-color: var(--cor5);
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .container .container-projetos .content-projetos .item .projeto-img {
+    width: 100%;
+}
+
+main .container .container-projetos .content-projetos .item .projeto-img img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+main .container .container-projetos .content-projetos .item .title-projeto h3 {
+    font-size: 1.1rem;
+    color: var(--cor1);
+    padding: 10px 0px;
+    text-align: center;
+}
+
+main .container .container-projetos .content-projetos .item .infos-projeto p {
+    color: var(--cor2);
+    font-size: 1rem;
+    text-align: justify;
+}
+
+main .container .container-projetos .content-projetos .item a {
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+    color: var(--cor2);
+    margin: 20px 0px 0px 0px;
+}
+
+main .container .container-projetos .content-projetos .item a > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+main .container .container-projetos .content-projetos .item a:hover {
+    color: var(--cor3)
+}
+
+main .container .container-habilidades h2 {
+    font-size: 3rem;
+    padding: 10px 0px 30px 0px;
+    color: var(--cor3);
+    text-shadow: 5px 3px 0px black;
+}
+
+main .container .container-habilidades .content-habilidades {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main .container .container-habilidades .content-habilidades .item {
+    background-color: var(--cor5);
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .container-habilidades .content-habilidades .item .icon-img i {
+    font-size: 1.8rem;
+    color: var(--cor4);
+}
+
+main .container .container-habilidades .content-habilidades .item h3 {
+    font-size: 1.3rem;
+    padding: 0px 0px 10px 0px;
+}
+
+main .container .container-habilidades .content-habilidades .item p {
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--cor2)
+}
+
+footer {
+    background-color: var(--cor4);
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer .container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container-footer p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cor2)
+}
+
+footer .container-footer p > span {
+    color: var(--cor3)
+}

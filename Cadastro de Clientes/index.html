@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header class="container-header">
+        <h1>Cadastro de Clientes</h1>
+    </header>
+
+    <main>
+        <article class="container">
+            <button class="btn-cadastrar blue" id="cadastrarCliente">Cadastrar Cliente</button>
+
+            <table id="tableCliente" class="records">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Celular</th>
+                        <th>Cidade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Novo Cliente</h2>
+                        <button class="btn-close"><span class="modal-close" id="modalClose"><i class="fa-solid fa-x fa-fw"></i></span></button>
+                    </header>
+                    <form class="modal-form" id="form">
+                        <label for="nome">
+                            <input type="text" name="nome" id="nome" class="modal-field" placeholder="Nome do Cliente">
+                        </label>
+                        <label for="email">
+                            <input type="email" name="email" id="email" class="modal-field" placeholder="E-mail do Cliente">
+                        </label>
+                        <label for="tel">
+                            <input type="tel" name="tel" id="celular" class="modal-field" placeholder="Celular do Cliente">
+                        </label>
+                        <label for="cidade">
+                            <input type="text" name="cidade" id="cidade" class="modal-field" placeholder="Cidada do Cliente">
+                        </label>
+                    </form>
+                    <footer class="modal-footer">
+                        <button id="salvar" class="btn green">Salvar</button>
+                        <button id="cancelar" class="btn red">Cancelar</button>
+                    </footer>
+                </div>
+            </div>
+        </articel>
+    </main>
+</body>
+</html>
