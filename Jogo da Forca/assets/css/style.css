@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Montserrat", sans-serif;
+}
+
+:root {
+    --cor0: #DB1203;
+    --cor1: #39DB26;
+    --cor2: #D99923;
+    --cor3: #ffffff;
+    --cor4: #229FBD;
+    --cor5: #C61587;
+}
+
+body {
+    background-color: var(--cor2);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+body h1 {
+    font-size: 2.3rem;
+    color: var(--cor3);
+    margin-bottom: 30px;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .container .buttons-actions button {
+    width: 150px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cor3);
+    border: 2px solid var(--cor4);
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 500ms all ease;
+}
+
+main .container .buttons-actions button:hover {
+    transform: scale(1.1);
+    background-color: var(--cor4);
+    color: #000;
+}
+
+main .container .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .container .game canvas {
+    border: 3px solid var(--cor4);
+    border-radius: 5px;
+}
+
+main .container .game .text-sublinhados {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .container .game .text-sublinhados p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor3);
+}
+
+main .container .game .anwers-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.50rem;
+}
+
+main .container .game .anwers-buttons button {
+    width: 50px;
+    padding: 8px;
+    border: 2px solid var(--cor5);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.green {
+    background-color: green;
+    cursor: no-drop;
+}
+
+.red {
+    background-color: red;
+    cursor: no-drop;
+}

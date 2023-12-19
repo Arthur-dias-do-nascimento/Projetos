@@ -1,0 +1,9 @@
+@media (max-width: 600px) {
+    main .container .game .anwers-buttons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    canvas {
+        width: 400px;
+    }
+}
