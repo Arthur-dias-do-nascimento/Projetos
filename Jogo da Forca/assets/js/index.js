@@ -84,7 +84,7 @@ function LetterButtonClick(event) {
             btn_reset.classList.remove('hidden')
         }
     } else {
-        // o botão que foi apertado com a letra certa é adicionada uma classe nele e a função desenhar() é executada.
+        // o botão que foi apertado com a letra errada é adicionada uma classe nele e a função desenhar() é executada.
         event.target.style.border = '2px solid #DB1203'
         event.target.classList.add('red')
 
