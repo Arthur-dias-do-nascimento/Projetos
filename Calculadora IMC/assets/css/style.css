@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #090909;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    background-color: #131313;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+main h1 {
+    color: #f9f9f9;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+main h1::before {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 5px;
+    background-color: #184718;
+    border-radius: 5px;
+    bottom: 0px;
+    left: 100px;
+    box-shadow: 0px 0px 8px #184718;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+main .container .input-peso, .input-altura {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+main .container .input-peso span, .input-altura span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+main .container .input-peso .input-field, .input-altura .input-field {
+    background-color: #050500;
+    padding: 8px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .input-peso .input-field input, .input-altura .input-field input {
+    width: 300px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+main .container .input-peso .input-field .icon > i, .input-altura .input-field .icon > i {
+    font-size: 1.1rem;
+    color: #303030;
+}
+
+main .container .btn-calcular {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #177217;
+    cursor: pointer;
+    transition: 350ms all ease;
+}
+
+main .container .btn-calcular:hover {
+    transform: scale(1.03);
+}
+
+main .container .btn-calcular:active {
+    transition: none;
+    transform: scale(0.9);
+}
+
+main .container .messagem-imc {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Calculadora IMC</h1>
+        
+        <section class="container">
+            <div class="input-peso">
+                <span>Seu peso em Kg</span>
+                
+                <div class="input-field">
+                    <input type="number" name="peso" id="input-peso" placeholder="Digite seu peso em Kg">
+                    <span class="icon"><i class="fa-solid fa-weight-hanging"></i></span>
+                </div>
+            </div>
+
+            <div class="input-altura">
+                <span>Sua altura em Metros</span>
+
+                <div class="input-field">
+                    <input type="number" name="altura" id="input-altura" placeholder="Digite sua altura em metros">
+                    <span class="icon"><i class="fa-solid fa-ruler-vertical fa-fw"></i></span>
+                </div>
+            </div>
+
+            <button class="btn-calcular">Calculadora</button>
+
+            <div class="messagem-imc">
+                <span class="imc-text"></span>
+                <span class="classificacao-imc"></span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
