@@ -2,7 +2,7 @@
 const palavras = [
     "Amor",
     "Base",
-    "Besta ",
+    "Besta",
     "Sela",
     "Mesa",
     "Comida",
