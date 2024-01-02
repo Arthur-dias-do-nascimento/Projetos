@@ -1,0 +1,87 @@
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon button i {
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        margin: 20px 0px;
+    }
+
+    .mobile-menu .nav-item .nav-link {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+        position: relative;
+    }
+
+    .mobile-menu .nav-item .nav-link:hover::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: #e38445;
+        border-radius: 5px;
+        bottom: -3px;
+        animation: slide_animation 400ms ease 1;  
+        animation-fill-mode: forwards;
+    }
+
+    .open {
+        display: block;
+    }
+
+    main .container .container-habilidades .content {
+        flex-direction: column;
+    }
+
+    main .container .container-habilidades .content .wrapper h2, .wrapper p {
+        text-align: center;
+        margin: 20px;
+    }
+
+    main .container .container-projetos .content .list-projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@keyframes slide_animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

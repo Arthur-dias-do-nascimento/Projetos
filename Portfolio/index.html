@@ -3,30 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1/1968.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <title>Portfolio | Arthur Dias</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/resposive.css">
+    <script src="assets/js/index.js" defer></script>
 </head>
-<body>
+<body id="top">
     <header>
         <nav class="nav-bar">
             <div class="nav-logo">
-                <img src="https://cdn-icons-png.flaticon.com/512/1/1968.png" alt="icon img">
-                <h1>Arthur<br> Dias</h1>
+                <h2>Portfolio <span>.</span></h2>
             </div>
 
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                </ul>
-            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projetos</a></li>
+            </ul>
 
             <div class="mobile-menu-icon">
                 <button class="button-icon"><i id="icon" class="fa-solid fa-bars fa-fw"></i></button>
@@ -34,164 +29,186 @@
         </nav>
 
         <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
-                <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                <li class="nav-item"><a href="#contato" class="nav-link">Contatos</a></li>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projetos</a></li>
             </ul>
         </div>
     </header>
 
     <main>
         <article class="container">
-            <section class="container-inicio" id="inicio">
-                <h2>Olá, eu sou um<br> Desenvolvedor Front-end</h2>
-                <p>Esse é meu portfolio onde vou mostrar meus projetos e minhas habilidades, estou focando mais no Front-end. Tenho o conhecimento no conceitos fundamentais nas linguagens HTML, CSS e JavaScript.</p>
+            <section class="container-inicio" id="home">
+                <div class="content">
+                    <h1>Olá, eu sou um Developer Web</h1>
+                    <p>Olá, seja bem vindo ao meu site, sou um developer web apaxionado por programação, gosto de fazer sites legais e bons para o cliente</p>
 
-                <div class="icons-sociais">
-                    <div class="icon">
-                        <a href="https://github.com/Arthur-dias-do-nascimento" rel="external" target="_blank"><i class="fa-brands fa-github fa-fw"></i></a>
-                    </div>
-                    <div class="icon">
-                        <a href="#"><i class="fa-brands fa-linkedin fa-fw"></i></a>
-                    </div>
-                    <div class="icon">
-                        <a href="https://www.youtube.com/channel/UCLFdKDEx75FScZ52jULDASA" rel="external" target="_blank"><i class="fa-brands fa-youtube fa-fw"></i></a>
-                    </div>
+                    <ul class="list-link">
+                        <li class="link">
+                            <a href="#">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="link">
+                            <a href="https://github.com/Arthur-dias-do-nascimento" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="link">
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <section class="container-projetos" id="projetos">
-                <h2>Projetos Concluídos</h2>
-                <h3>Projetos:</h3>
 
-                <ul class="content-projetos">
-                    <li class="item">
-                        <div class="projeto-img">
-                            <img src="image/Captura de Tela (10).png" alt="Imagem de um projeto">
-                        </div>
-                        <div class="title-projeto">
-                            <h3>Calculadora</h3>
-                        </div>
-                        <div class="infos-projeto">
-                            <p>Uma calculadora simples onde faz calculos basicos de uma calculadora como somar, subtrair, multiplicar, dividir alem de outras funções adicionais.</p>
-                        </div>
-
-                        <a href="https://github.com/Arthur-dias-do-nascimento/Projetos/tree/main/Calculadora" rel="external" target="_blank">Ver Projeto <span class="material-symbols-outlined">arrow_forward</span></a>
-                    </li>
-                    <li class="item">
-                        <div class="projeto-img">
-                            <img src="image/Captura de Tela (11).png" alt="Imagem de um projeto">
-                        </div>
-                        <div class="title-projeto">
-                            <h3>Lista de Tarefas</h3>
-                        </div>
-                        <div class="infos-projeto">
-                            <p>Uma lista de tarefas simples, onde você adiciona uma tarefa, tambem tem funções adicionais como exclui e deixar a tarefa marcada como concluída.</p>
-                        </div>
-
-                        <a href="https://github.com/Arthur-dias-do-nascimento/Projetos-HTML-CSS-JS/tree/main/PROJ001.Lista%20de%20tarefas" rel="external" target="_blank">Ver Projeto <span class="material-symbols-outlined">arrow_forward</span></a>
-                    </li>
-                    <li class="item">
-                        <div class="projeto-img">
-                            <img src="image/Captura de Tela (12).png" alt="Imagem de um projeto">
-                        </div>
-                        <div class="title-projeto">
-                            <h3>Page Login/Cadastro</h3>
-                        </div>
-                        <div class="infos-projeto">
-                            <p>Uma pagina de login/cadastro que o usuario logar ou se cadastra nesse site e fica salvo o nome, email e senha do usuario.</p>
-                        </div>
-
-                        <a href="https://github.com/Arthur-dias-do-nascimento/Projetos/tree/main/Lista%20de%20tarefas" rel="external" target="_blank">Ver Projeto <span class="material-symbols-outlined">arrow_forward</span></a>
-                    </li>
-                    <li class="item">
-                        <div class="projeto-img">
-                            <img src="image/Captura de Tela (13).png" alt="Imagem de um projeto">
-                        </div>
-                        <div class="title-projeto">
-                            <h3>Relogio Digital</h3>
-                        </div>
-                        <div class="infos-projeto">
-                            <p>Uma relogio digital normal que marca as horas, minutos e segundos.</p>
-                        </div>
-
-                        <a href="https://github.com/Arthur-dias-do-nascimento/Projetos/tree/main/Relogio%20Digital" rel="external" target="_blank">Ver Projeto <span class="material-symbols-outlined">arrow_forward</span></a>
-                    </li>
-                    <li class="item">
-                        <div class="projeto-img">
-                            <img src="image/Captura de Tela (14).png" alt="Imagem de um projeto">
-                        </div>
-                        <div class="title-projeto">
-                            <h3>Cadastro de Clientes</h3>
-                        </div>
-                        <div class="infos-projeto">
-                            <p>Um cadastro de clintes onde você cadastre o seu cliente colocado o nome, email, numero de celular e cidade, que vai aparencer na tabela que tambem tem a função de exclui esse cliente</p>
-                        </div>
-    
-                        <a href="https://github.com/Arthur-dias-do-nascimento/Projetos/tree/main/Cadastro%20de%20Clientes" rel="external" target="_blank">Ver Projeto <span class="material-symbols-outlined">arrow_forward</span></a>
-                    </li>
-                    <li class="item">
-                        <div class="projeto-img">
-                            <img src="image/Captura de Tela (15).png" alt="Imagem de um projeto">
-                        </div>
-                        <div class="title-projeto">
-                            <h3>Playlist de Musica</h3>
-                        </div>
-                        <div class="infos-projeto">
-                            <p>Uma reprodução de musica normal onde reproduz musicas, funções de voltar a musica e ir pra proxima musica e tambem pausar e dar play na musica, alem de mostra o tempo da musica.</p>
-                        </div>
-    
-                        <a href="https://github.com/Arthur-dias-do-nascimento/Projetos/tree/main/Playlist%20Music" rel="external" target="_blank">Ver Projeto <span class="material-symbols-outlined">arrow_forward</span></a>
-                    </li>
-                </ul>
+            <section class="container-sobre" id="about">
+                <div class="content">
+                    <h2>Sobre mim</h2>
+                    <p>Eu sou um developer web que tem conhecimentos basicos nas linguagens HTML, CSS e JavaScript, junto com projetos que vão te deixar impressionado. Fiz alguns curso de TI como de HTM, CSS, JavaScript e Desenvolvimentos de Games. Para ver meus projetos acesse o meu <a href="https://github.com/Arthur-dias-do-nascimento" target="_blank">GitHub</a>.</p>
+                </div>
             </section>
-            <section class="container-habilidades" id="habilidades">
-                <h2>Minhas<br> Habilidades:</h2>
 
-                <div class="content-habilidades">
-                    <div class="item">
-                        <div class="icon-img">
-                            <i class="fa-brands fa-html5 fa-fw"></i>
-                        </div>
-                        <h3>HTML5</h3>
-                        <p>Eu sei HTML o basico do HTML, como HTML semâtico, tambem uma boa nomeclatura de codigo nos meus elementos</p>
+            <section class="container-habilidades" id="skills">
+                <div class="content">
+                    <div class="wrapper">
+                        <h2>Minhas habilidades</h2>
+                        <p>Tenhos habilidades basicas, mas com essas habilidades consigo fazer um site legal e bom com essas tecnologias/ferrametas.</p>
                     </div>
-                    <div class="item">
-                        <div class="icon-img">
-                            <i class="fa-brands fa-css3-alt fa-fw"></i>
-                        </div>
-                        <h3>CSS3</h3>
-                        <p>Eu sei o basico do CSS, como display flex e grid, alem de reposividade, e variaveis em CSS, alem de outras coisas</p>
-                    </div>
-                    <div class="item">
-                        <div class="icon-img">
-                            <i class="fa-brands fa-js fa-fw"></i>
-                        </div>
-                        <h3>JavaScript</h3>
-                        <p>Eu sei o basico de Javascript, tenho conhecimento nos conceitos fundamentais da linguagem.</p>
-                    </div>
+
+                    <ul class="list-skills">
+                        <li class="skill">
+                            <div class="text-skill">
+                                <span>HTML5</span>
+                            </div>
+
+                            <img src="assets/img/icon-html.png" alt="Uma imagem da logo HTML5">
+                        </li>
+                        <li class="skill">
+                            <div class="text-skill">
+                                <span>CSS3</span>
+                            </div>
+
+                            <img src="assets/img/icon-css.png" alt="Uma imagem da logo CSS3">
+                        </li>
+                        <li class="skill">
+                            <div class="text-skill">
+                                <span>JavaScript</span>
+                            </div>
+
+                            <img src="assets/img/icon-javascript.png" alt="Uma imagem da logo JavaScript">
+                        </li>
+                        <li class="skill">
+                            <div class="text-skill">
+                                <span>NodeJs</span>
+                            </div>
+
+                            <img src="assets/img/icon-nodejs.png" alt="Uma imagem da logo NodeJs">
+                        </li>
+                        <li class="skill">
+                            <div class="text-skill">
+                                <span>Vs code</span>
+                            </div>
+
+                            <img src="assets/img/icon-vs-code.png" alt="Uma imagem da logo NodeJs">
+                        </li>
+                        <li class="skill">
+                            <div class="text-skill">
+                                <span>Git</span>
+                            </div>
+
+                            <img src="assets/img/icon-git.png" alt="Uma imagem da logo NodeJs">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="container-projetos" id="projects">
+                <div class="content">
+                    <h2>Meus projetos</h2>
+                    <p>Esses são meu projetos que fiz nas liguagens HTML, CSS e Javascript. São projetos iniciantes mas por trâs tem uma grande experiencia nesses projetos.</p>
+
+                    <ul class="list-projects">
+                        <li class="project">
+                            <div class="content-img">
+                                <img src="assets/img/img-lista-de-tarefas.png" alt="imagem do projeto">
+                            </div>
+
+                            <div class="infos">
+                                <h3>Lista de Tarefas</h3>
+                                <p>Uma lista de tarefas que você adiciona uma tarefa com o nome da tarefa junto com butões que tem funções de exclui essa tarefa e editar essa tarefa, tambem tem um sistema de salvar as tarefas e armazena-las.</p>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="content-img">
+                                <img src="assets/img/img-calculadora.png" alt="imagem do projeto">
+                            </div>
+
+                            <div class="infos">
+                                <h3>Calculadora</h3>
+                                <p>Uma calculadora basica que faz calculos matematicos basicos, como soma, subtrair, multiplicar e divisão, alem de outras funções de uma calculadora basica, foi um pouco dificil pra mim no JavaScript e no CSS mas aprendi muita coisa com esse projeto</p>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="content-img">
+                                <img src="assets/img/img-jogo-da-forca.png" alt="imagem do projeto">
+                            </div>
+
+                            <div class="infos">
+                                <h3>Jogo da Forca</h3>
+                                <p>Um jogo da forca, um jogo bem antigo mas bem legal, o objetivo do jogo a acerta a palavra secreta que é escolhida pelo programa, tem botões com as letras do alfabeto e você tem que clica na letra que você acha que faz parte da palavra escolhida pelo programa, caso você erre uma letra da palavra completa uma parte da forca, a cada erro que você fizer uma parte da forca e desenhada.</p>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="content-img">
+                                <img src="assets/img/img-cadastro-de-clientes.png" alt="imagem do projeto">
+                            </div>
+
+                            <div class="infos">
+                                <h3>Cadastro de Clientes</h3>
+                                <p>Um cadastro de cliente que você (o cliente) se cadastra nesse site que pede suas informações como nome, email, numero de celular e cidade que você mora, junto com isso tem um botão que exclui esse cliente, alem de um sistema de salvar e armazenar o cliente cadastrado.</p>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="content-img">
+                                <img src="assets/img/img-calculadora-idade.png" alt="imagem do projeto">
+                            </div>
+
+                            <div class="infos">
+                                <h3>Calculadora de Idade</h3>
+                                <p>Uma calculadora de idade ela calcular sua idade paseando no ano, mês e dia que você nasceu e depois mostra a sua idade, mesês e dias que você viveu ate agora. Foi um projeto bem legal de se fazer, mexer com datas é um pouco dificil no JavaScript mas consigui no final.</p>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="content-img">
+                                <img src="assets/img/img-relogio-digital.png" alt="imagem do projeto">
+                            </div>
+
+                            <div class="infos">
+                                <h3>Relogio Digital</h3>
+                                <p>Um relogio digital normal que marca as horas, minutos e segundos pra você, esse projeto tive que mexer com tempo das horas, minutos e segundos e atualizar os valores na tela.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </article>
     </main>
 
     <footer>
-        <div class="container-footer" id="contato">
-            <p>Autor do Site: "<span>Arthur Dias Do Nascimento</span>"</p>
-
-            <div class="footer-icons-sociais">
-                <div class="icon">
-                    <a href="https://github.com/Arthur-dias-do-nascimento" rel="external" target="_blank"><i class="fa-brands fa-github fa-fw"></i></a>
-                </div>
-                <div class="icon">
-                    <a href="#"><i class="fa-brands fa-linkedin fa-fw"></i></a>
-                </div>
-                <div class="icon">
-                    <a href="https://www.youtube.com/channel/UCLFdKDEx75FScZ52jULDASA" rel="external" target="_blank"><i class="fa-brands fa-youtube fa-fw"></i></a>
-                </div>
-            </div>
+        <div class="container">
+            <h2>Fim <span>.</span></h2>
+            <p class="copyright">©2023 Arthur</p>
         </div>
     </footer>
+
+    <button class="icon-btn-top">
+        <a href="#top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </button>
 </body>
 </html>

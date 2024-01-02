@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cl_0: #e38445;
+    --cl_1: #ffffff;
+    --cl_2: #9e9e9e;
+    --bg_0: #1f1f1f;
+    --bg_1: #303030;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--bg_0);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    background-color: var(--bg_1);
+    padding: 15px 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+header.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav-bar .nav-logo h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cl_1);
+    position: relative;
+}
+
+header .nav-bar .nav-logo h2::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 7px;
+    border-radius: 5px;
+    background-color: var(--cl_0);
+    bottom: 0px;
+    left: 10px;
+}
+
+header .nav-bar .nav-logo h2 > span {
+    color: var(--cl_0);
+}
+
+header .nav-bar .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 0 2rem;
+    list-style-type: none;
+}
+
+header .nav-bar .nav-list .nav-item .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cl_1);
+    position: relative;
+}
+
+header .nav-bar .nav-list .nav-item .nav-link:hover::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: var(--cl_0);
+    bottom: -3px;
+    border-radius: 5px;
+    animation: slide_animation 400ms ease 1;  
+    animation-fill-mode: forwards;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    max-width: 1100px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main .container section {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .container-inicio {
+    background-image: url("../img/background-waves-2.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+main .container .container-inicio .content {
+    text-align: center;
+    width: 50%;
+}
+
+main .container .container-inicio .content h1 {
+    font-size: 3rem;
+    color: var(--cl_1);
+}
+
+main .container .container-inicio .content p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cl_2);
+    margin: 30px 0px 20px 0px;
+}
+
+main .container .container-inicio .content .list-link {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1.8rem;
+}
+
+main .container .container-inicio .content .list-link .link a > i {
+    font-size: 2.5rem;
+    color: var(--bg_0);
+    transition: 500ms all ease;
+}
+
+main .container .container-inicio .content .list-link .link a > i:hover {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
+    color: var(--cl_0);
+}
+
+main .container .container-sobre .content {
+    text-align: center;
+    width: 50%;
+}
+
+main .container .container-sobre .content h2 {
+    font-size: 3rem;
+    color: var(--cl_1);
+}
+
+main .container .container-sobre .content p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cl_2);
+    margin: 20px;
+}
+
+main .container .container-sobre .content p > a {
+    color: var(--cl_0);
+    text-decoration: none;
+}
+
+main .container .container-habilidades .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .container .container-habilidades .content .wrapper {
+    width: 50%;
+}
+
+main .container .container-habilidades .content .wrapper h2 {
+    font-size: 3rem;
+    color: var(--cl_1);
+    margin: 20px 0px;
+}
+
+main .container .container-habilidades .content .wrapper p {
+    font-size: 1.2rem;
+    color: var(--cl_2);
+}
+
+main .container .container-habilidades .content .list-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+main .container .container-habilidades .content .list-skills .skill {
+    width: 90px;
+    height: 70px;
+    background-color: var(--bg_1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+    position: relative;
+    transition: 500ms all ease;
+}
+
+main .container .container-habilidades .content .list-skills .skill .text-skill {
+    display: none;
+}
+
+main .container .container-habilidades .content .list-skills .skill:hover {
+    transform: scale(1.2);
+    
+    & .text-skill {
+        display: block;
+        position: absolute;
+        top: -25px;
+        background-color: var(--cl_0);
+        padding: 3px 8px;
+        color: var(--bg_0);
+        font-weight: bold;
+    }
+}
+
+main .container .container-projetos .content {
+    text-align: center;
+}
+
+main .container .container-projetos .content h2 {
+    font-size: 3rem;
+    color: var(--cl_1);
+}
+
+main .container .container-projetos .content > p {
+    font-size: 1.2rem;
+    color: var(--cl_2);
+    margin: 20px;
+}
+
+main .container .container-projetos .content .list-projects {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+main .container .container-projetos .content .list-projects .project {
+    background-color: var(--bg_0);
+    margin: 15px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 500ms all ease;
+}
+
+main .container .container-projetos .content .list-projects .project:hover {
+    transform: scale(1.03);
+}
+
+main .container .container-projetos .content .list-projects .project .content-img img {
+    width: 100%;
+}
+
+main .container .container-projetos .content .list-projects .project .infos h3 {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+    color: var(--cl_1);
+}
+
+main .container .container-projetos .content .list-projects .project .infos p {
+    font-size: 1.1rem;
+    color: var(--cl_2);
+}
+
+footer {
+    background-color: var(--bg_1);
+    width: 100%;
+    padding: 10px 20px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container h2 {
+    font-size: 1.8rem;
+    color: var(--cl_1);
+}
+
+footer .container h2 > span {
+    color: var(--cl_0);
+}
+
+footer .container p {
+    font-size: 1.1rem;
+    color: var(--cl_2);
+    text-decoration: underline;
+}
+
+.icon-btn-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 500ms all ease;
+    position: fixed;
+    top: 80%;
+    left: 94%;
+    display: none;
+}
+
+.icon-btn-top:hover {
+    transform: scale(1.2);
+}
+
+.icon-btn-top a {
+    font-size: 1.3rem;
+    color: var(--cl_0);
+}
+
+@keyframes slide_animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
