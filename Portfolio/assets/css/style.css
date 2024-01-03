@@ -153,7 +153,7 @@ main .container .container-inicio .content .list-link .link a > i {
 }
 
 main .container .container-inicio .content .list-link .link a > i:hover {
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 0px 10px var(--cl_0);
     transform: scale(1.2);
     color: var(--cl_0);
 }

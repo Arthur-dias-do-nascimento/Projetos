@@ -62,6 +62,10 @@
         display: block;
     }
 
+    main .container .container-inicio .content, main .container .container-sobre .content, main .container .container-habilidades .content .wrapper {
+        width: 80%;
+    }
+
     main .container .container-habilidades .content {
         flex-direction: column;
     }
