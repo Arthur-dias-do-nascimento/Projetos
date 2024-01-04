@@ -1,2 +1,3 @@
 # Projetos HTML CSS JavaScript
- Meus projetos em HTML CSS e JavaScript
+
+Esses são meus projetos em HTML, CSS e JavaScript.
