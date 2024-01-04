@@ -75,8 +75,9 @@
         margin: 20px;
     }
 
-    main .container .container-projetos .content .list-projects {
-        grid-template-columns: 1fr 1fr;
+    main .container .container-projetos .content .list-projects .project {
+        flex-direction: column;
+        gap: 2rem;
     }
 }
 

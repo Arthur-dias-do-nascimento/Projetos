@@ -22,6 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 header {
@@ -152,10 +153,22 @@ main .container .container-inicio .content .list-link .link a > i {
     transition: 500ms all ease;
 }
 
-main .container .container-inicio .content .list-link .link a > i:hover {
+main .container .container-inicio .content .list-link .link a #instagram:hover {
+    color: #7407F2;
+    text-shadow: 0px 0px 10px #7407F2;
+    transform: scale(1.2);
+}
+
+main .container .container-inicio .content .list-link .link a #github:hover {
+    color: var(--cl_0);
     text-shadow: 0px 0px 10px var(--cl_0);
     transform: scale(1.2);
-    color: var(--cl_0);
+}
+
+main .container .container-inicio .content .list-link .link a #linkedin:hover {
+    color: #112CF5;
+    text-shadow: 0px 0px 10px #112CF5;
+    transform: scale(1.2) ;
 }
 
 main .container .container-sobre .content {
@@ -256,29 +269,52 @@ main .container .container-projetos .content > p {
 
 main .container .container-projetos .content .list-projects {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem 0;
     gap: 1rem;
 }
 
 main .container .container-projetos .content .list-projects .project {
     background-color: var(--bg_0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 2rem;
     margin: 15px 10px;
     padding: 10px;
     border-radius: 5px;
     transition: 500ms all ease;
+    width: 100%;
+    max-width: 1050px;
 }
 
 main .container .container-projetos .content .list-projects .project:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 main .container .container-projetos .content .list-projects .project .content-img img {
     width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms all ease;
+}
+
+main .container .container-projetos .content .list-projects .project .content-img img:hover {
+    transform: scale(0.95);
+}
+
+main .container .container-projetos .content .list-projects .project .infos {
+    width: 100%;
+    max-width: 1000px;
 }
 
 main .container .container-projetos .content .list-projects .project .infos h3 {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     margin: 10px 0px;
     color: var(--cl_1);
 }
@@ -310,9 +346,13 @@ footer .container h2 > span {
 }
 
 footer .container p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--cl_2);
     text-decoration: underline;
+}
+
+footer .container p > span {
+    color: var(--cl_0);
 }
 
 .icon-btn-top {
@@ -336,9 +376,12 @@ footer .container p {
     transform: scale(1.2);
 }
 
-.icon-btn-top a {
+.icon-btn-top button {
     font-size: 1.3rem;
     color: var(--cl_0);
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 @keyframes slide_animation {
