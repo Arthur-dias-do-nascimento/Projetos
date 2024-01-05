@@ -28,7 +28,7 @@ main .container {
     background-color: #f1f1f1;
     border: 3px solid #101010;
     border-radius: 5px;
-    width: 100%;
+    width: 400px;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
