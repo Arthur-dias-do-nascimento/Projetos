@@ -1,7 +1,74 @@
 const header = document.querySelector("header")
-const btn_top = document.querySelector(".icon-btn-top")
-const itens_link = document.querySelectorAll(".nav-link")
+const btn_top = document.querySelector(".btn-top")
+const itens_link = [...document.querySelectorAll(".nav-link")]
 const icon_menu = document.querySelector(".button-icon")
+
+function scrollToTop() {
+    // Fallback para navegadores que não suportam scroll suave
+    const startPosition = window.pageYOffset || document.documentElement.scrollTop;
+    const duration = 500; // Tempo da animação em milissegundos
+    const startTime = performance.now();
+
+    function scroll(timestamp) {
+        const currentTime = timestamp - startTime;
+        const increment = Math.easeInOutQuad(currentTime, startPosition, -startPosition, duration);
+
+        window.scrollTo(0, increment);
+
+        if (currentTime < duration) {
+            requestAnimationFrame(scroll);
+        }
+    }
+
+    Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    };
+
+    requestAnimationFrame(scroll);
+}
+
+btn_top.addEventListener('click', () => {
+    scrollToTop();
+});
+
+function scrollToTarget(target) {
+    const element = document.querySelector(target);
+    const startPosition = window.pageYOffset || document.documentElement.scrollTop;
+    const targetPosition = element.getBoundingClientRect().top + startPosition;
+    const duration = 500; // Tempo da animação em milissegundos
+    const startTime = performance.now();
+
+    function scroll(timestamp) {
+        const currentTime = timestamp - startTime;
+        const increment = Math.easeInOutQuad(currentTime, startPosition, targetPosition - startPosition, duration);
+
+        window.scrollTo(0, increment);
+
+        if (currentTime < duration) {
+            requestAnimationFrame(scroll);
+        }
+    }
+
+    Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    };
+
+    requestAnimationFrame(scroll);
+}
+
+itens_link.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = link.getAttribute('href');
+        scrollToTarget(target);
+    });
+});
 
 window.addEventListener("scroll", () => {
     if (window.scrollY >= 10) {

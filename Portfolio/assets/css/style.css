@@ -355,7 +355,7 @@ footer .container p > span {
     color: var(--cl_0);
 }
 
-.icon-btn-top {
+.btn-top {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -372,11 +372,11 @@ footer .container p > span {
     display: none;
 }
 
-.icon-btn-top:hover {
+.btn-top:hover {
     transform: scale(1.2);
 }
 
-.icon-btn-top button {
+.btn-top > i {
     font-size: 1.3rem;
     color: var(--cl_0);
     background-color: transparent;
