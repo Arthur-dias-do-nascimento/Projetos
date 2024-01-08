@@ -29,6 +29,6 @@ function VerificarAnoMesDia(data) {
     let dia_nascimento = data_nascimento.getDate() + 1;
 
     year_text.textContent = ano_atual - ano_nascimento;
-    month_text.textContent = mes_atual - mes_nascimento;
-    day_text.textContent = dia_atual - dia_nascimento;
+    month_text.textContent = mes_nascimento - mes_atual;
+    day_text.textContent = dia_nascimento - dia_atual;
 }
