@@ -3,7 +3,7 @@ import { palavras } from "./palavras.js";
 // elementos html
 const btn_start = document.querySelector('.btn-start')
 const btn_reset = document.querySelector('.btn-reset')
-const buttons =[... document.querySelectorAll('.anwers-buttons button')]
+const buttons = [... document.querySelectorAll('.anwers-buttons button')]
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
 
@@ -28,6 +28,11 @@ function startGame() {
 
 function resetGame() {
     window.location.reload()
+}
+
+function checkVictory() {
+    // essa função retorna se a elementos no meu array letters que tem o valor "_", se tem retorna false, se não tem retorna true
+    return !letters.includes('_');
 }
 
 function randomIndex() {
@@ -108,11 +113,6 @@ function updateLetters(letter, string) {
             p[i].innerHTML = letter
         }
     }
-}
-
-function checkVictory() {
-    // essa função retorna se a elementos no meu array letters que tem o valor "_", se tem retorna false, se não tem retorna true
-    return !letters.includes('_');
 }
 
 function desenhar() {
