@@ -3,7 +3,7 @@ import { palavras } from "./palavras.js";
 // elementos html
 const btn_start = document.querySelector('.btn-start')
 const btn_reset = document.querySelector('.btn-reset')
-const buttons = document.querySelectorAll('.anwers-buttons button')
+const buttons =[... document.querySelectorAll('.anwers-buttons button')]
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
 
@@ -55,10 +55,10 @@ function addSublinhadoArray() {
 
 function addEventButtons() {
     // adiciona um função em um evento de click em todos os botões.
-    for (let i=0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', LetterButtonClick)
-        buttons[i].classList.remove('hidden')
-    }
+    buttons.forEach((element) => {
+        element.addEventListener("click", LetterButtonClick)
+        element.classList.remove("hidden")
+    })
 }
 
 function verificarLetters(letter, string) {
@@ -70,11 +70,12 @@ function LetterButtonClick(event) {
     // função para verificar que o botão apertado foi a letra da umas da palavra sorteada.
     const stringPalavra = palavras[index].toLowerCase()
     const letter = event.target.innerHTML.toLowerCase()
-
+    
     if (verificarLetters(letter, stringPalavra)) {
         // o botão que foi apertado com a letra certa é adicionada uma classe nele
         event.target.style.border = '2px solid #39DB26'
         event.target.classList.add('green')
+        event.target.removeEventListener("click", LetterButtonClick)
         
         // verificar se a letra faz parte da palavra sorteada e coloca ela no lugar que forme a palavra
         updateLetters(letter, stringPalavra)
@@ -82,11 +83,16 @@ function LetterButtonClick(event) {
         if (checkVictory()) {
             alert('Você venceu!')
             btn_reset.classList.remove('hidden')
+
+            buttons.forEach((element) => {
+                element.removeEventListener("click", LetterButtonClick)
+            })
         }
     } else {
         // o botão que foi apertado com a letra errada é adicionada uma classe nele e a função desenhar() é executada.
         event.target.style.border = '2px solid #DB1203'
         event.target.classList.add('red')
+        event.target.removeEventListener("click", LetterButtonClick)
 
         // a função desenhar é executa cada fez que o usuario errar.
         desenhar()
@@ -163,6 +169,9 @@ function desenhar() {
 
             alert('voce perdeu!!!')
             btn_reset.classList.remove('hidden')
+            buttons.forEach((element) => {
+                element.removeEventListener("click", LetterButtonClick)
+            })
         break;
     }
 }
