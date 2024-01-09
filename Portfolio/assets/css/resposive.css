@@ -81,6 +81,15 @@
     }
 }
 
+@media (max-width: 450px) {
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @keyframes slide_animation {
     0% {
         width: 0%;
