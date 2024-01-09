@@ -217,6 +217,7 @@ main .container .container-habilidades .content .wrapper p {
 main .container .container-habilidades .content .list-skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 2rem;
 }
 
@@ -232,6 +233,11 @@ main .container .container-habilidades .content .list-skills .skill {
     border-radius: 8px;
     position: relative;
     transition: 500ms all ease;
+}
+
+main .container .container-habilidades .content .list-skills .skill:last-child {
+    grid-column: 2;
+    grid-row: 3;
 }
 
 main .container .container-habilidades .content .list-skills .skill .text-skill {
